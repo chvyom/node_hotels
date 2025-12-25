@@ -1,5 +1,5 @@
 const jwt=require('jsonwebtoken')
-
+require("dotenv").config
 const jwtAuthMiddleware=(req,res,next)=>{
 
     const authorization=req.headers.authorization
